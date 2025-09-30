@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arivu - Educational Video Filter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Arivu</h1>
+    <p class="tagline">Smart Educational Video Filter</p>
+
+    <form id="filterForm">
+      <label for="subject">Subject:</label>
+      <select id="subject">
+        <option value="">-- Select --</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+        <option value="technology">Technology</option>
+      </select>
+
+      <label for="grade">Grade Level:</label>
+      <select id="grade">
+        <option value="">-- Select --</option>
+        <option value="highschool">High School</option>
+        <option value="college">College</option>
+        <option value="competitive">Competitive Exams</option>
+      </select>
+
+      <label for="duration">Video Length:</label>
+      <select id="duration">
+        <option value="">-- Select --</option>
+        <option value="short">Short (&lt; 4 min)</option>
+        <option value="medium">Medium (4–15 min)</option>
+        <option value="long">Long (&gt; 15 min)</option>
+      </select>
+
+      <label for="keywords">Keywords:</label>
+      <input type="text" id="keywords" placeholder="e.g. algebra, world war" />
+
+      <button type="submit">Filter Videos</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
