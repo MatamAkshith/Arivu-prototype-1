@@ -1,0 +1,8 @@
+# API keys and config files
+.env
+config.js
+
+
+# Node.js / Python common ignores
+node_modules/
+__pycache__/
